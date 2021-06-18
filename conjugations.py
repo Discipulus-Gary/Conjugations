@@ -16,7 +16,7 @@ def conjugate_indicative(i, j, k, l, m):
                         [[[verbs[i][j][2]],        [perfect_stem + 'imus']],
                          [[perfect_stem + 'isti'], [perfect_stem + 'istis']],
                          [[perfect_stem + 'it'],   [perfect_stem + 'erunt']]],
-                        [[[perfect_stem + 'eram'], v[perfect_stem + 'eramus']],
+                        [[[perfect_stem + 'eram'], [perfect_stem + 'eramus']],
                          [[perfect_stem + 'eras'], [perfect_stem + 'eratis']],
                          [[perfect_stem + 'erat'], [perfect_stem + 'erant']]],
                         [[[perfect_stem + 'ero'],  [perfect_stem + 'erimus']],
@@ -486,7 +486,7 @@ choices = [i for i in range(len(weights))]
 
 conjugation = ['first conjugation', 'second conjugation', 'third-o conjugation', 'third-io conjugation', 'fourth conjugation']
 tense_voice_indicative = ['present active', 'imperfect active', 'future active', 'perfect active', 'pluperfect active', 'future-perfect active', 'present passive', 'imperfect passive', 'future passive', 'perfect passive (masculine nominative singular)', 'pluperfect passive (masculine nominative singular)', 'future-perfect passive (masculine nominative singular)']
-tense_voice_subjunctive = ['present active', 'imperfect active', 'perfect active', 'pluperfect active', 'present passive', 'imperfect passive', 'perfect passive (masculine nominative singular))', 'pluperfect passive (masculine nominative singular)']
+tense_voice_subjunctive = ['present active', 'imperfect active', 'perfect active', 'pluperfect active', 'present passive', 'imperfect passive', 'perfect passive (masculine nominative singular)', 'pluperfect passive (masculine nominative singular)']
 tense_voice_infinitive = ['present active', 'present passive', 'perfect active', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive']
 tense_voice_participle = ['present active (masculine nominative singular)', 'present active (masculine genitive singular)', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive (masculine nominative singular)']
 person = ['first person', 'second person', 'third person']
@@ -514,7 +514,7 @@ while True:
         m = (choice - 360) % 48 % 6 % 2
         
         conjugations = conjugate_subjunctive(i, j, k, l, m)
-        s = 'subjunctive ' + tense_voice_subnjunctive[k] + ' ' + person[l] + ' ' + number[m]
+        s = 'subjunctive ' + tense_voice_subjunctive[k] + ' ' + person[l] + ' ' + number[m]
     elif choice < 610:
         i = (choice - 600) // 2
         j = random.randrange(len(verbs[i]))
@@ -528,14 +528,14 @@ while True:
         k = (choice - 610) % 6
 
         conjugations = conjugate_infinitive(i, j, k)
-        s = 'infinitive ' + tense_mood_infinitive[k]
+        s = 'infinitive ' + tense_voice_infinitive[k]
     elif choice < 665:
         i = (choice - 640) // 5
         j = random.randrange(len(verbs[i]))
         k = (choice - 640) % 5
         
         conjugations = conjugate_participle(i, j, k)
-        s = 'participle ' + tense_mood_participle[k] 
+        s = 'participle ' + tense_voice_participle[k] 
     elif choice < 670:
         i = (choice - 665)
         j = random.randrange(len(verbs[i]))
