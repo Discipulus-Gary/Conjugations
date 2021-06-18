@@ -551,7 +551,7 @@ while True:
         _input = input(s + ' of ' + verbs[i][j][0] + ', ' + verbs[i][j][1] + ', ' + verbs[i][j][2] + ', ' + verbs[i][j][3] + ': ')
 
     if _input in conjugations:
-        weights[choice] = min(weights[choice] - 1, 0)
+        weights[choice] = max(weights[choice] - 1, 0)
         print('Correct!')
     else:
         weights[choice] += 1
