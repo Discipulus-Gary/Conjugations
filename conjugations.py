@@ -399,7 +399,7 @@ def conjugate_participle(i, j, k):
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'], 
                                                                             [verbs[i][j][3]],
-                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem + 'nd' + 'us']]]
+                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem + 'nd' + 'us']]
         return conjugations[k]
     if i == 1:
         present_stem = verbs[i][j][1][:-2]
@@ -495,7 +495,7 @@ while True:
         m = choice % 72 % 6 % 2
         
         conjugations = conjugate_indicative(i, j, k, l, m)
-        s = person[l] + ' ' + number[m] + ' ' + tense_voice_indicative[k] + ' indicative'
+        s = tense_voice_indicative[k] + ' indicative ' + person[l] + ' ' + number[m]
     elif choice < 600:
         i = (choice - 360) // 48
         j = random.randrange(len(verbs[i]))
@@ -504,7 +504,7 @@ while True:
         m = (choice - 360) % 48 % 6 % 2
         
         conjugations = conjugate_subjunctive(i, j, k, l, m)
-        s = person[l] + ' ' + number[m] + ' ' + tense_voice_subjunctive[k] + ' subjunctive'
+        s = tense_voice_subjunctive[k] + ' subjunctive ' + person[l] + ' ' + number[m]
     elif choice < 610:
         i = (choice - 600) // 2
         j = random.randrange(len(verbs[i]))
