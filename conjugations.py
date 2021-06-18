@@ -495,7 +495,7 @@ while True:
         m = choice % 72 % 6 % 2
         
         conjugations = conjugate_indicative(i, j, k, l, m)
-        s = 'indicative ' + tense_voice_indicative[k] + ' ' + person[l] + ' ' + number[m]
+        s = person[l] + ' ' + number[m] + ' ' + tense_voice_indicative[k] + ' indicative'
     elif choice < 600:
         i = (choice - 360) // 48
         j = random.randrange(len(verbs[i]))
@@ -504,28 +504,28 @@ while True:
         m = (choice - 360) % 48 % 6 % 2
         
         conjugations = conjugate_subjunctive(i, j, k, l, m)
-        s = 'subjunctive ' + tense_voice_subjunctive[k] + ' ' + person[l] + ' ' + number[m]
+        s = person[l] + ' ' + number[m] + ' ' + tense_voice_subjunctive[k] + ' subjunctive'
     elif choice < 610:
         i = (choice - 600) // 2
         j = random.randrange(len(verbs[i]))
         k = (choice - 600) % 2
 
         conjugations = conjugate_imperative(i, j, k)
-        s = 'imperative ' + 'present ' + number[k]
+        s = number[k] + ' imperative'
     elif choice < 640:
         i = (choice - 610) // 6
         j = random.randrange(len(verbs[i]))
         k = (choice - 610) % 6
 
         conjugations = conjugate_infinitive(i, j, k)
-        s = 'infinitive ' + tense_voice_infinitive[k]
+        s = tense_voice_infinitive[k] + ' infinitive'
     elif choice < 660:
         i = (choice - 640) // 4
         j = random.randrange(len(verbs[i]))
         k = (choice - 640) % 4
         
         conjugations = conjugate_participle(i, j, k)
-        s = 'participle ' + tense_voice_participle[k] 
+        s = tense_voice_participle[k] + ' participle'
     elif choice < 665:
         i = (choice - 660)
         j = random.randrange(len(verbs[i]))
