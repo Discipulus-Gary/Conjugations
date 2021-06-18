@@ -398,7 +398,6 @@ def conjugate_participle(i, j, k):
     if i == 0:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'],
-                        [present_stem + 'ntis'],
                         [verbs[i][j][3]],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
                         [present_stem + 'nd' + 'us']]
@@ -406,7 +405,6 @@ def conjugate_participle(i, j, k):
     if i == 1:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'],
-                        [present_stem + 'ntis'],
                         [verbs[i][j][3]],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
                         [present_stem + 'nd' + 'us']]
@@ -414,7 +412,6 @@ def conjugate_participle(i, j, k):
     if i == 2:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'],
-                        [present_stem + 'ntis'],
                         [verbs[i][j][3]],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
                         [present_stem + 'nd' + 'us']]
@@ -422,14 +419,12 @@ def conjugate_participle(i, j, k):
     if i == 3:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem[:-1] + 'ie' + 'ns'],
-                        [present_stem[:-1] + 'ie' + 'ntis'],
                         [verbs[i][j][3]],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
                         [present_stem[:-1] + 'ie' + 'nd' + 'us']]
         return conjugations[k]
     present_stem = verbs[i][j][1][:-2]
     conjugations = [[present_stem[:-1] + 'ie' + 'ns'],
-                    [present_stem[:-1] + 'ie' + 'ntis'],
                     [verbs[i][j][3]],
                     [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
                     [present_stem[:-1] + 'ie' + 'nd' + 'us']]
@@ -488,7 +483,7 @@ conjugation = ['first conjugation', 'second conjugation', 'third-o conjugation',
 tense_voice_indicative = ['present active', 'imperfect active', 'future active', 'perfect active', 'pluperfect active', 'future-perfect active', 'present passive', 'imperfect passive', 'future passive', 'perfect passive (masculine)', 'pluperfect passive (masculine)', 'future-perfect passive (masculine)']
 tense_voice_subjunctive = ['present active', 'imperfect active', 'perfect active', 'pluperfect active', 'present passive', 'imperfect passive', 'perfect passive (masculine)', 'pluperfect passive (masculine)']
 tense_voice_infinitive = ['present active', 'present passive', 'perfect active', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive']
-tense_voice_participle = ['present active (masculine nominative singular)', 'present active (masculine genitive singular)', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive (masculine nominative singular)']
+tense_voice_participle = ['present active (masculine nominative singular)', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive (masculine nominative singular)']
 person = ['first person', 'second person', 'third person']
 number = ['singular', 'plural']
 
@@ -529,21 +524,21 @@ while True:
 
         conjugations = conjugate_infinitive(i, j, k)
         s = 'infinitive ' + tense_voice_infinitive[k]
-    elif choice < 665:
-        i = (choice - 640) // 5
+    elif choice < 660:
+        i = (choice - 640) // 4
         j = random.randrange(len(verbs[i]))
-        k = (choice - 640) % 5
+        k = (choice - 640) % 4
         
         conjugations = conjugate_participle(i, j, k)
         s = 'participle ' + tense_voice_participle[k] 
-    elif choice < 670:
-        i = (choice - 665)
+    elif choice < 665:
+        i = (choice - 660)
         j = random.randrange(len(verbs[i]))
 
         conjugations = conjugate_gerund(i, j)
         s = 'gerund (genitive)'
     else:
-        i = (choice - 670)
+        i = (choice - 665)
         j = random.randrange(len(verbs[i]))
 
         conjugations = conjugate_supine(i, j)
@@ -574,7 +569,7 @@ while True:
         
     print(s + ' of ' + verbs[i][j][0] + ', ' + verbs[i][j][1] + ', ' + verbs[i][j][2] + ', ' + verbs[i][j][3] + ' (' + conjugation[i] + '):')
     
-    for conjugation in conjugations:
-        print(conjugation)
+    for _conjugation in conjugations:
+        print(_conjugation)
 
     print()
