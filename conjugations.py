@@ -31,15 +31,15 @@ def conjugate_indicative(i, j, k, l, m):
                         [[[present_stem + 'bo' + 'r'],   [present_stem + 'bi' + 'mur']],
                          [[present_stem + 'be' + 'ris'], [present_stem + 'bi' + 'mini']],
                          [[present_stem + 'bi' + 'tur'], [present_stem + 'bu' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3] + ' sumus']],
-                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3] + ' estis']],
-                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3] + ' sunt']]],
-                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3] + ' eramus']],
-                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3] + ' eratis']],
-                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3] + ' erant']]],
-                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3] + ' erimus']],
-                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3] + ' eritis']],
-                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3] + ' erunt']]]]
+                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3][:-2] + 'i' + ' sumus']],
+                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3][:-2] + 'i' + ' estis']],
+                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3][:-2] + 'i' + ' sunt']]],
+                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3][:-2] + 'i' + ' eramus']],
+                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3][:-2] + 'i' + ' eratis']],
+                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3][:-2] + 'i' + ' erant']]],
+                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3][:-2] + 'i' + ' erimus']],
+                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3][:-2] + 'i' + ' eritis']],
+                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3][:-2] + 'i' + ' erunt']]]]
         return conjugations[k][l][m]
     if i == 1:
         present_stem = verbs[i][j][1][:-2]
@@ -71,15 +71,15 @@ def conjugate_indicative(i, j, k, l, m):
                         [[[present_stem + 'bo' + 'r'],   [present_stem + 'bi' + 'mur']],
                          [[present_stem + 'be' + 'ris'], [present_stem + 'bi' + 'mini']],
                          [[present_stem + 'bi' + 'tur'], [present_stem + 'bu' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3] + ' sumus']],
-                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3] + ' estis']],
-                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3] + ' sunt']]],
-                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3] + ' eramus']],
-                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3] + ' eratis']],
-                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3] + ' erant']]],
-                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3] + ' erimus']],
-                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3] + ' eritis']],
-                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3] + ' erunt']]]]
+                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3][:-2] + 'i' + ' sumus']],
+                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3][:-2] + 'i' + ' estis']],
+                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3][:-2] + 'i' + ' sunt']]],
+                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3][:-2] + 'i' + ' eramus']],
+                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3][:-2] + 'i' + ' eratis']],
+                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3][:-2] + 'i' + ' erant']]],
+                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3][:-2] + 'i' + ' erimus']],
+                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3][:-2] + 'i' + ' eritis']],
+                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3][:-2] + 'i' + ' erunt']]]]
         return conjugations[k][l][m]
     if i == 2:
         present_stem = verbs[i][j][1][:-2]
@@ -111,15 +111,15 @@ def conjugate_indicative(i, j, k, l, m):
                         [[[present_stem[:-1] + 'a' + 'r'],   [present_stem[:-1] + 'e' + 'mur']],
                          [[present_stem[:-1] + 'e' + 'ris'], [present_stem[:-1] + 'e' + 'mini']],
                          [[present_stem[:-1] + 'e' + 'tur'], [present_stem[:-1] + 'e' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3] + ' sumus']],
-                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3] + ' estis']],
-                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3] + ' sunt']]],
-                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3] + ' eramus']],
-                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3] + ' eratis']],
-                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3] + ' erant']]],
-                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3] + ' erimus']],
-                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3] + ' eritis']],
-                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3] + ' erunt']]]]
+                        [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3][:-2] + 'i' + ' sumus']],
+                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3][:-2] + 'i' + ' estis']],
+                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3][:-2] + 'i' + ' sunt']]],
+                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3][:-2] + 'i' + ' eramus']],
+                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3][:-2] + 'i' + ' eratis']],
+                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3][:-2] + 'i' + ' erant']]],
+                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3][:-2] + 'i' + ' erimus']],
+                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3][:-2] + 'i' + ' eritis']],
+                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3][:-2] + 'i' + ' erunt']]]]
         return conjugations[k][l][m]
     if i == 3:
         present_stem = verbs[i][j][1][:-2]
@@ -151,15 +151,15 @@ def conjugate_indicative(i, j, k, l, m):
                         [[[present_stem[:-1] + 'i' + 'a' + 'r'],   [present_stem[:-1] + 'i' + 'e' + 'mur']],
                          [[present_stem[:-1] + 'i' + 'e' + 'ris'], [present_stem[:-1] + 'i' + 'e' + 'mini']],
                          [[present_stem[:-1] + 'i' + 'e' + 'tur'], [present_stem[:-1] + 'i' + 'e' + 'ntur']]],
-                       [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3] + ' sumus']],
-                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3] + ' estis']],
-                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3] + ' sunt']]],
-                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3] + ' eramus']],
-                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3] + ' eratis']],
-                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3] + ' erant']]],
-                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3] + ' erimus']],
-                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3] + ' eritis']],
-                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3] + ' erunt']]]]
+                       [[[verbs[i][j][3] + ' sum'],  [verbs[i][j][3][:-2] + 'i' + ' sumus']],
+                         [[verbs[i][j][3] + ' es'],  [verbs[i][j][3][:-2] + 'i' + ' estis']],
+                         [[verbs[i][j][3] + ' est'], [verbs[i][j][3][:-2] + 'i' + ' sunt']]],
+                        [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3][:-2] + 'i' + ' eramus']],
+                         [[verbs[i][j][3] + ' eras'], [verbs[i][j][3][:-2] + 'i' + ' eratis']],
+                         [[verbs[i][j][3] + ' erat'], [verbs[i][j][3][:-2] + 'i' + ' erant']]],
+                        [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3][:-2] + 'i' + ' erimus']],
+                         [[verbs[i][j][3] + ' eris'], [verbs[i][j][3][:-2] + 'i' + ' eritis']],
+                         [[verbs[i][j][3] + ' erit'], [verbs[i][j][3][:-2] + 'i' + ' erunt']]]]
         return conjugations[k][l][m]
     present_stem = verbs[i][j][1][:-2]
     perfect_stem = verbs[i][j][2][:-1]
@@ -190,15 +190,15 @@ def conjugate_indicative(i, j, k, l, m):
                     [[[present_stem + 'a' + 'r'],   [present_stem + 'e' + 'mur']],
                      [[present_stem + 'e' + 'ris'], [present_stem + 'e' + 'mini']],
                      [[present_stem + 'e' + 'tur'], [present_stem + 'e' + 'ntur']]],
-                    [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3] + ' sumus']],
-                     [[verbs[i][j][3] + ' es'],  [verbs[i][j][3] + ' estis']],
-                     [[verbs[i][j][3] + ' est'], [verbs[i][j][3] + ' sunt']]],
-                    [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3] + ' eramus']],
-                     [[verbs[i][j][3] + ' eras'], [verbs[i][j][3] + ' eratis']],
-                     [[verbs[i][j][3] + ' erat'], [verbs[i][j][3] + ' erant']]],
-                    [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3] + ' erimus']],
-                     [[verbs[i][j][3] + ' eris'], [verbs[i][j][3] + ' eritis']],
-                     [[verbs[i][j][3] + ' erit'], [verbs[i][j][3] + ' erunt']]]]
+                    [[[verbs[i][j][3] + ' sum'], [verbs[i][j][3][:-2] + 'i' + ' sumus']],
+                     [[verbs[i][j][3] + ' es'],  [verbs[i][j][3][:-2] + 'i' + ' estis']],
+                     [[verbs[i][j][3] + ' est'], [verbs[i][j][3][:-2] + 'i' + ' sunt']]],
+                    [[[verbs[i][j][3] + ' eram'], [verbs[i][j][3][:-2] + 'i' + ' eramus']],
+                     [[verbs[i][j][3] + ' eras'], [verbs[i][j][3][:-2] + 'i' + ' eratis']],
+                     [[verbs[i][j][3] + ' erat'], [verbs[i][j][3][:-2] + 'i' + ' erant']]],
+                    [[[verbs[i][j][3] + ' ero'],  [verbs[i][j][3][:-2] + 'i' + ' erimus']],
+                     [[verbs[i][j][3] + ' eris'], [verbs[i][j][3][:-2] + 'i' + ' eritis']],
+                     [[verbs[i][j][3] + ' erit'], [verbs[i][j][3][:-2] + 'i' + ' erunt']]]]
     return conjugations[k][l][m]
 
 def conjugate_subjunctive(i, j, k, l, m):
@@ -223,12 +223,12 @@ def conjugate_subjunctive(i, j, k, l, m):
                         [[[present_stem + 'r' + 'e' + 'r'],   [present_stem + 'r' + 'e' + 'mur']],
                          [[present_stem + 'r' + 'e' + 'ris'], [present_stem + 'r' + 'e' + 'mini']],
                          [[present_stem + 'r' + 'e' + 'tur'], [present_stem + 'r' + 'e' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3] + ' simus']],
-                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3] + ' sitis']],
-                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3] + ' sint']]],
-                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3] + ' essemus']],
-                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3] + ' essetis']],
-                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3] + ' essent']]]]
+                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3][:-2] + 'i' + ' simus']],
+                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3][:-2] + 'i' + ' sitis']],
+                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3][:-2] + 'i' + ' sint']]],
+                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3][:-2] + 'i' + ' essemus']],
+                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3][:-2] + 'i' + ' essetis']],
+                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3][:-2] + 'i' + ' essent']]]]
         return conjugations[k][l][m]
     if i == 1:
         present_stem = verbs[i][j][1][:-2]
@@ -251,12 +251,12 @@ def conjugate_subjunctive(i, j, k, l, m):
                         [[[present_stem + 'r' + 'e' + 'r'],   [present_stem + 'r' + 'e' + 'mur']],
                          [[present_stem + 'r' + 'e' + 'ris'], [present_stem + 'r' + 'e' + 'mini']],
                          [[present_stem + 'r' + 'e' + 'tur'], [present_stem + 'r' + 'e' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3] + ' simus']],
-                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3] + ' sitis']],
-                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3] + ' sint']]],
-                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3] + ' essemus']],
-                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3] + ' essetis']],
-                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3] + ' essent']]]]
+                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3][:-2] + 'i' + ' simus']],
+                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3][:-2] + 'i' + ' sitis']],
+                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3][:-2] + 'i' + ' sint']]],
+                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3][:-2] + 'i' + ' essemus']],
+                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3][:-2] + 'i' + ' essetis']],
+                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3][:-2] + 'i' + ' essent']]]]
         return conjugations[k][l][m]
     if i == 2:
         present_stem = verbs[i][j][1][:-2]
@@ -279,12 +279,12 @@ def conjugate_subjunctive(i, j, k, l, m):
                         [[[present_stem + 'r' + 'e' + 'r'],   [present_stem + 'r' + 'e' + 'mur']],
                          [[present_stem + 'r' + 'e' + 'ris'], [present_stem + 'r' + 'e' + 'mini']],
                          [[present_stem + 'r' + 'e' + 'tur'], [present_stem + 'r' + 'e' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3] + ' simus']],
-                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3] + ' sitis']],
-                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3] + ' sint']]],
-                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3] + ' essemus']],
-                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3] + ' essetis']],
-                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3] + ' essent']]]]
+                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3][:-2] + 'i' + ' simus']],
+                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3][:-2] + 'i' + ' sitis']],
+                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3][:-2] + 'i' + ' sint']]],
+                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3][:-2] + 'i' + ' essemus']],
+                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3][:-2] + 'i' + ' essetis']],
+                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3][:-2] + 'i' + ' essent']]]]
         return conjugations[k][l][m]
     if i == 3:
         present_stem = verbs[i][j][1][:-2]
@@ -307,12 +307,12 @@ def conjugate_subjunctive(i, j, k, l, m):
                         [[[present_stem + 'r' + 'e' + 'r'],   [present_stem + 'r' + 'e' + 'mur']],
                          [[present_stem + 'r' + 'e' + 'ris'], [present_stem + 'r' + 'e' + 'mini']],
                          [[present_stem + 'r' + 'e' + 'tur'], [present_stem + 'r' + 'e' + 'ntur']]],
-                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3] + ' simus']],
-                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3] + ' sitis']],
-                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3] + ' sint']]],
-                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3] + ' essemus']],
-                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3] + ' essetis']],
-                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3] + ' essent']]]]
+                        [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3][:-2] + 'i' + ' simus']],
+                         [[verbs[i][j][3] + ' sis'], [verbs[i][j][3][:-2] + 'i' + ' sitis']],
+                         [[verbs[i][j][3] + ' sit'], [verbs[i][j][3][:-2] + 'i' + ' sint']]],
+                        [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3][:-2] + 'i' + ' essemus']],
+                         [[verbs[i][j][3] + ' esses'], [verbs[i][j][3][:-2] + 'i' + ' essetis']],
+                         [[verbs[i][j][3] + ' esset'], [verbs[i][j][3][:-2] + 'i' + ' essent']]]]
         return conjugations[k][l][m]
     present_stem = verbs[i][j][1][:-2]
     perfect_stem = verbs[i][j][2][:-1]
@@ -334,12 +334,12 @@ def conjugate_subjunctive(i, j, k, l, m):
                     [[[present_stem + 'r' + 'e' + 'r'],   [present_stem + 'r' + 'e' + 'mur']],
                      [[present_stem + 'r' + 'e' + 'ris'], [present_stem + 'r' + 'e' + 'mini']],
                      [[present_stem + 'r' + 'e' + 'tur'], [present_stem + 'r' + 'e' + 'ntur']]],
-                    [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3] + ' simus']],
-                     [[verbs[i][j][3] + ' sis'], [verbs[i][j][3] + ' sitis']],
-                     [[verbs[i][j][3] + ' sit'], [verbs[i][j][3] + ' sint']]],
-                    [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3] + ' essemus']],
-                     [[verbs[i][j][3] + ' esses'], [verbs[i][j][3] + ' essetis']],
-                     [[verbs[i][j][3] + ' esset'], [verbs[i][j][3] + ' essent']]]]
+                    [[[verbs[i][j][3] + ' sim'], [verbs[i][j][3][:-2] + 'i' + ' simus']],
+                     [[verbs[i][j][3] + ' sis'], [verbs[i][j][3][:-2] + 'i' + ' sitis']],
+                     [[verbs[i][j][3] + ' sit'], [verbs[i][j][3][:-2] + 'i' + ' sint']]],
+                    [[[verbs[i][j][3] + ' essem'], [verbs[i][j][3][:-2] + 'i' + ' essemus']],
+                     [[verbs[i][j][3] + ' esses'], [verbs[i][j][3][:-2] + 'i' + ' essetis']],
+                     [[verbs[i][j][3] + ' esset'], [verbs[i][j][3][:-2] + 'i' + ' essent']]]]
     return conjugations[k][l][m]
 
 def conjugate_imperative(i, j, k):
@@ -485,8 +485,8 @@ weights.append(1)
 choices = [i for i in range(len(weights))]
 
 conjugation = ['first conjugation', 'second conjugation', 'third-o conjugation', 'third-io conjugation', 'fourth conjugation']
-tense_voice_indicative = ['present active', 'imperfect active', 'future active', 'perfect active', 'pluperfect active', 'future-perfect active', 'present passive', 'imperfect passive', 'future passive', 'perfect passive (masculine nominative singular)', 'pluperfect passive (masculine nominative singular)', 'future-perfect passive (masculine nominative singular)']
-tense_voice_subjunctive = ['present active', 'imperfect active', 'perfect active', 'pluperfect active', 'present passive', 'imperfect passive', 'perfect passive (masculine nominative singular)', 'pluperfect passive (masculine nominative singular)']
+tense_voice_indicative = ['present active', 'imperfect active', 'future active', 'perfect active', 'pluperfect active', 'future-perfect active', 'present passive', 'imperfect passive', 'future passive', 'perfect passive (masculine)', 'pluperfect passive (masculine)', 'future-perfect passive (masculine)']
+tense_voice_subjunctive = ['present active', 'imperfect active', 'perfect active', 'pluperfect active', 'present passive', 'imperfect passive', 'perfect passive (masculine)', 'pluperfect passive (masculine)']
 tense_voice_infinitive = ['present active', 'present passive', 'perfect active', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive']
 tense_voice_participle = ['present active (masculine nominative singular)', 'present active (masculine genitive singular)', 'perfect passive (masculine nominative singular)', 'future active (masculine nominative singular)', 'future passive (masculine nominative singular)']
 person = ['first person', 'second person', 'third person']
@@ -574,7 +574,7 @@ while True:
         
     print(s + ' of ' + verbs[i][j][0] + ', ' + verbs[i][j][1] + ', ' + verbs[i][j][2] + ', ' + verbs[i][j][3] + ' (' + conjugation[i] + '):')
     
-    for _conjugation in conjugations:
-        print(_conjugation)
+    for conjugation in conjugations:
+        print(conjugation)
 
     print()
