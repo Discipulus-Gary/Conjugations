@@ -366,68 +366,63 @@ def conjugate_imperative(i, j, k):
 def conjugate_infinitive(i, j, k):
     if i == 0:
         perfect_stem = verbs[i][j][2][:-1]
-        conjugations = [[verbs[i][j][1]],                                            [verbs[i][j][1][:-3] + 'ari'],
-                        [perfect_stem + 'isse'],                                     [verbs[i][j][3] + ' esse'],
+        conjugations = [[verbs[i][j][1]],                                             [verbs[i][j][1][:-3] + 'ari'],
+                        [perfect_stem + 'isse'],                                      [verbs[i][j][3] + ' esse'],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:] + ' esse'], [verbs[i][j][3][:-2] + 'um' + ' iri']]
         return conjugations[k]
     if i == 1:
         perfect_stem = verbs[i][j][2][:-1]
-        conjugations = [[verbs[i][j][1]],                                            [verbs[i][j][1][:-3] + 'eri'],
-                        [perfect_stem + 'isse'],                                     [verbs[i][j][3] + ' esse'],
+        conjugations = [[verbs[i][j][1]],                                             [verbs[i][j][1][:-3] + 'eri'],
+                        [perfect_stem + 'isse'],                                      [verbs[i][j][3] + ' esse'],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:] + ' esse'], [verbs[i][j][3][:-2] + 'um' + ' iri']]
         return conjugations[k]
     if i == 2:
         perfect_stem = verbs[i][j][2][:-1]
-        conjugations = [[verbs[i][j][1]],                                            [verbs[i][j][1][:-3] + 'i'],
-                        [perfect_stem + 'isse'],                                     [verbs[i][j][3] + ' esse'],
+        conjugations = [[verbs[i][j][1]],                                             [verbs[i][j][1][:-3] + 'i'],
+                        [perfect_stem + 'isse'],                                      [verbs[i][j][3] + ' esse'],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:] + ' esse'], [verbs[i][j][3][:-2] + 'um' + ' iri']]
         return conjugations[k]
     if i == 3:
         perfect_stem = verbs[i][j][2][:-1]
-        conjugations = [[verbs[i][j][1]],                                            [verbs[i][j][1][:-3] + 'i'],
-                        [perfect_stem + 'isse'],                                     [verbs[i][j][3] + ' esse'],
+        conjugations = [[verbs[i][j][1]],                                             [verbs[i][j][1][:-3] + 'i'],
+                        [perfect_stem + 'isse'],                                      [verbs[i][j][3] + ' esse'],
                         [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:] + ' esse'], [verbs[i][j][3][:-2] + 'um' + ' iri']]
         return conjugations[k]
     perfect_stem = verbs[i][j][2][:-1]
-    conjugations = [[verbs[i][j][1]],                                            [verbs[i][j][1][:-3] + 'iri'],
-                    [perfect_stem + 'isse'],                                     [verbs[i][j][3] + ' esse'],
+    conjugations = [[verbs[i][j][1]],                                             [verbs[i][j][1][:-3] + 'iri'],
+                    [perfect_stem + 'isse'],                                      [verbs[i][j][3] + ' esse'],
                     [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:] + ' esse'], [verbs[i][j][3][:-2] + 'um' + ' iri']]
     return conjugations[k]
 
 def conjugate_participle(i, j, k):
     if i == 0:
         present_stem = verbs[i][j][1][:-2]
-        conjugations = [[present_stem + 'ns'],
-                        [verbs[i][j][3]],
-                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
-                        [present_stem + 'nd' + 'us']]
+        conjugations = [[present_stem + 'ns'], 
+                                                                            [verbs[i][j][3]],
+                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem + 'nd' + 'us']]]
         return conjugations[k]
     if i == 1:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'],
-                        [verbs[i][j][3]],
-                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
-                        [present_stem + 'nd' + 'us']]
+                                                                            [verbs[i][j][3]],
+                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem + 'nd' + 'us']]
         return conjugations[k]
     if i == 2:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem + 'ns'],
-                        [verbs[i][j][3]],
-                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
-                        [present_stem + 'nd' + 'us']]
+                                                                            [verbs[i][j][3]],
+                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem + 'nd' + 'us']]
         return conjugations[k]
     if i == 3:
         present_stem = verbs[i][j][1][:-2]
         conjugations = [[present_stem[:-1] + 'ie' + 'ns'],
-                        [verbs[i][j][3]],
-                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
-                        [present_stem[:-1] + 'ie' + 'nd' + 'us']]
+                                                                            [verbs[i][j][3]],
+                        [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem[:-1] + 'ie' + 'nd' + 'us']]
         return conjugations[k]
     present_stem = verbs[i][j][1][:-2]
     conjugations = [[present_stem[:-1] + 'ie' + 'ns'],
-                    [verbs[i][j][3]],
-                    [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]],
-                    [present_stem[:-1] + 'ie' + 'nd' + 'us']]
+                                                                        [verbs[i][j][3]],
+                    [verbs[i][j][3][:-2] + 'ur' + verbs[i][j][3][-2:]], [present_stem[:-1] + 'ie' + 'nd' + 'us']]
     return conjugations[k]
 
 def conjugate_gerund(i, j):
